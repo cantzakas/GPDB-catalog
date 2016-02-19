@@ -1,7 +1,6 @@
 /* CREATE VIEW public.pg_table_indexes	*/
 
 CREATE VIEW public.pg_table_indexes AS 
-
 SELECT i.schemaname, 
 	p.tablename AS basetablename, 
 	i.tablename, 
