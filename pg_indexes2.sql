@@ -24,5 +24,5 @@ FROM pg_index x
 		WHERE pg_database.datname = current_database() 
 			AND pg_database.dattablespace = s.oid
 	) d(dfltspcname)
-WHERE c.relkind = 'r'::"char" 
+WHERE c.relkind = 'r'::"char"
 	AND i.relkind = 'i'::"char";
