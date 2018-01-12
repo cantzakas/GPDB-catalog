@@ -7,8 +7,10 @@ Get EXTERNAL and INTERNAL TABLE DDL definition using pg_dump utility or pg_catal
 - Get table definition (PG style) using `pg_catalog` and other similar dictionary table information
 - Get table definition using `psql \d+ <schema>.<table>`
 
-### Pending action items
+#### Pending action items
 - Check for DDL correctness & completeness:
   - Single- and multi-level partitioned tables
   - Table indexes
   - Column constraints
+
+**Updated as of _12 January 2018_**
