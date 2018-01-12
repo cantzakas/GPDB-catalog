@@ -1,4 +1,3 @@
-```sql
 CREATE OR REPLACE FUNCTION gpdb_toolkit.gp_create_table2(in_dbname text, in_schema text, in_tblname text) 
 RETURNS text
 AS $$
@@ -11,4 +10,3 @@ AS $$
 
     return out_result[0] $$ 
 LANGUAGE plpythonu;
-```
