@@ -22,7 +22,7 @@ Get UDF DDL definition using pg_dump or psql utility:
 - Get extended UDF definition using `psql \df+ <schema>.<function>`
 
 #### Pending action items
-- Get function definition using `pg_dump -c -s --gp-syntax <database>`
+- Get UDF definition using `pg_dump -c -s --gp-syntax <database>`
 
 ## User-Defined Types
 Get UDT DDL definition using pg_dump or psql utility:
@@ -30,4 +30,4 @@ Get UDT DDL definition using pg_dump or psql utility:
 - Get extended UDT definition using `psql \dT+ <schema>.<type>`
 
 #### Pending action items
-- Get function definition using `pg_dump -c -s --gp-syntax <database>`
+- Get UDT definition using `pg_dump -c -s --gp-syntax <database>`
