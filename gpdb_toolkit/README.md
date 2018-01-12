@@ -1,5 +1,7 @@
 # GPDB Catalog Functions
 
+**Updated as of _12 January 2018_**
+
 ## Table Definition (DDL)
 Get EXTERNAL and INTERNAL TABLE DDL definition using pg_dump utility or pg_catalog dictionary table, on either Greenplum or Postgres syntax:
 - Get table definition (GPDB style) using `pg_dump --gp-syntax -s -t <schema>.<table> <database>`
@@ -12,5 +14,3 @@ Get EXTERNAL and INTERNAL TABLE DDL definition using pg_dump utility or pg_catal
   - Single- and multi-level partitioned tables
   - Table indexes
   - Column constraints
-
-**Updated as of _12 January 2018_**
