@@ -15,7 +15,7 @@ pg_dump -c -s --gp-syntax  + <database>
 ```
 psql \d+ <schema>.<table>
 ```
-## Pending action items
+### Pending action items
 - Check for DDL correctness & completeness - *Single- and multi-level partitioned tables*
 - Check for DDL correctness & completeness - *Table indexes*
 - Check for DDL correctness & completeness - *Column constraints*
