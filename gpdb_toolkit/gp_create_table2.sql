@@ -11,5 +11,5 @@ AS $$
     
     out_results = [v[5] for i, v in enumerate(out_tables) if v[2] == in_schema and table_pattern.match(v[5])]
 
-    return 'SET search_path = gptika;' + '\n'.join(out_results) $$ 
+    return 'SET search_path = gptika;\n' + '\n'.join(out_results) $$ 
 LANGUAGE plpythonu;
