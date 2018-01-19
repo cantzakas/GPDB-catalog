@@ -3,7 +3,7 @@
 **Updated as of _19 January 2018_**
 
 ## GP Inventory
-- **```gp_inventory(database-name):```** returns a list of objects in Greenplum in user database with name `<database-name>` in the format `<TYPE> <SCHEMA> <NAME>`. That said, objects in system databases, such as `gp_toolkit`, `information_schema`, `pg_aoseg`, `pg_bitmaptindex` and `pg_catalog` are not returned in this report.
+- **```gp_inventory(database-name):```** returns a list of objects in Greenplum in user database with name `<database-name>` in the format `<TYPE> <SCHEMA> <NAME>`. That said, objects in system databases, such as `gp_toolkit`, `information_schema`, `pg_aoseg`, `pg_bitmapindex` and `pg_catalog` are not returned in this report.
 
 ## Tables
 Get TABLE (incl. EXTERNAL) DDL definition using pg_dump utility or pg_catalog dictionary table, on either Greenplum or Postgres syntax:
