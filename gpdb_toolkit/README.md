@@ -1,6 +1,6 @@
 # GPDB Catalog Functions
 
-**Updated as of _16 January 2018_**
+**Updated as of _19 January 2018_**
 
 ## Tables
 Get TABLE (incl. EXTERNAL) DDL definition using pg_dump utility or pg_catalog dictionary table, on either Greenplum or Postgres syntax:
@@ -11,7 +11,7 @@ Get TABLE (incl. EXTERNAL) DDL definition using pg_dump utility or pg_catalog di
 - **```psql_describe_table_extended(database-name, schema-name, table-name):```** get extended table definition using `psql \d+ <schema-name>.<table-name>`
 
 #### Pending action items
-- Check for completness & correctness: _CREATE TABLE <table-name> AS <template_table_name>_ definitions
+- Check for completness & correctness: _CREATE TABLE <new_table_name> AS <template_table_name>_ definitions
 
 ## User-Defined Functions
 Get UDF DDL definition using pg_dump or psql utility:
