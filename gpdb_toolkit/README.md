@@ -6,7 +6,9 @@
 - **```gp_inventory(database-name):```** returns a list of objects in Greenplum in user database with name `<database-name>` in the format `<TYPE> <SCHEMA> <NAME>`. That said, objects in system databases, such as `gp_toolkit`, `information_schema`, `pg_aoseg`, `pg_bitmapindex` and `pg_catalog` are not returned in this report.
 
 ## Tables
-Get TABLE (incl. EXTERNAL) DDL definition using pg_dump utility or pg_catalog dictionary table, on either Greenplum or Postgres syntax:
+1. Get list of tables in schema:
+- **```gp_non_partitioned_tables:```** Returns a list (schema name, table name) of all, non-partitioned tables in $schema
+2. Get TABLE (incl. EXTERNAL) DDL definition using pg_dump utility or pg_catalog dictionary table, on either Greenplum or Postgres syntax:
 - **```gp_show_table(database-name, schema-name, table-name):```** get table definition (GPDB style) using `pg_dump -c -s --gp-syntax <database-name>`, including those for single and multi-level partitioned tables, table indexes and column constraints such as `CHECK(<constraint>)`, `NOT NULL`, `UNIQUE` & `PRIMARY KEY`.
 - **```gp_create_table(database-name, schema-name, table-name):```** get table definition (GPDB style) using `pg_dump --gp-syntax -s -t <schema-name>.<table-name> <database-name>`
 - **```pg_create_table(schema-name, table-name):```**: get table definition (PG style) using `pg_catalog` and other related dictionary table information
