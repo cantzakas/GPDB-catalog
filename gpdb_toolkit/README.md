@@ -1,6 +1,6 @@
 # GPDB Catalog Functions
 
-**Updated as of _19 January 2018_**
+**Updated as of _15 August 2018_**
 
 ## GP Inventory
 - **```gp_inventory(database-name):```** returns a list of objects in Greenplum in user database with name `<database-name>` in the format `<TYPE> <SCHEMA> <NAME>`. That said, objects in system databases, such as `gp_toolkit`, `information_schema`, `pg_aoseg`, `pg_bitmapindex` and `pg_catalog` are not returned in this report.
