@@ -1,4 +1,4 @@
-SELECT (gp_toolkit.gp_skew_details(usr.relid)).*, pg_namespace.nspname, pg_class.relname, now()::timestamp
+SELECT (gp_toolkit.gp_skew_details(usr.relid)).*, pg_namespace.nspname, pg_class.relname
 FROM pg_stat_user_tables usr 
 INNER JOIN pg_catalog.pg_class
 	ON pg_class.oid = usr.relid
